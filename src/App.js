@@ -1,36 +1,36 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import EmployeeCard from "./components/EmployeeCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import friends from "./friends.json";
+import employees from "./employees.json";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.employees to the employees json array
   state = {
-    friends
+    employees
   };
 
-  removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
-  };
+  /*removeEmployee = id => {
+    // Filter this.state.employees for employees with an id not equal to the id being removed
+    const employees = this.state.employees.filter(employee => employee.id !== id);
+    // Set this.state.employees equal to the new employees array
+    this.setState({ employees });
+  };*/
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.employees and render a EmployeeCard component for each employee object
   render() {
     return (
       <Wrapper>
-        <Title>Friends List</Title>
-        {this.state.friends.map(friend => (
-          <FriendCard
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
+        <Title>All employees of Bay Resturant</Title>
+        {this.state.employees.map(employee => (
+          <EmployeeCard
+            //removeEmployee={this.removeEmployee}
+            id={employee.id}
+            key={employee.id}
+            name={employee.name}
+            image={employee.image}
+            occupation={employee.occupation}
+            department={employee.department}
           />
         ))}
       </Wrapper>

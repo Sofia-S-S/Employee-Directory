@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function FriendCard(props) {
+function EmployeeCard(props) {
   return (
     <div className="card">
       <div className="img-container">
@@ -16,15 +16,12 @@ function FriendCard(props) {
             <strong>Occupation:</strong> {props.occupation}
           </li>
           <li>
-            <strong>Location:</strong> {props.location}
+            <strong>Department:</strong> {props.department}
           </li>
         </ul>
       </div>
-      <span onClick={() => props.removeFriend(props.id)} className="remove">
-        𝘅
-      </span>
     </div>
   );
 }
 
-export default FriendCard;
+export default EmployeeCard;
