@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
+
 .title {
-  width: 100%;
+  font-family: "Titillium Web";
   text-align: center;
-  font-size: 3rem;
-  text-decoration: underline;
-  color: #2A77AE;
-  margin-bottom: 50px;
+  background-color: gray;
+  padding: 1rem;
 }

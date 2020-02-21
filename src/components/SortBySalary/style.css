@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
+
+.buttonEffect {
+  font-family: "Titillium Web";
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.5em 0.8em;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+  background: none;
+  outline: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.buttonEffect:hover {
+  color: #3d7ea3;
+}
